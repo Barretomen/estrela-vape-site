@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Estrela Vape Shop — E-Cigarette Store em Viseu e Matosinhos. Vape, CBD e Shisha. Loja para maiores de 18 anos." />
+  <title>Estrela Vape Shop | Viseu & Matosinhos</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="preload" as="image" href="assets/interior-loja-wide.webp" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="age-gate" id="ageGate" aria-modal="true" role="dialog" aria-labelledby="ageTitle">
+    <div class="age-card">
+      <img src="assets/logo-estrela.jpg" alt="Estrela Vape Shop" class="age-logo" />
+      <span class="eyebrow">Conteúdo para adultos</span>
+      <h1 id="ageTitle">Tens 18 anos ou mais?</h1>
+      <p>Este site contém informação sobre produtos de vape, CBD e shisha. A venda é proibida a menores de 18 anos.</p>
+      <div class="age-actions">
+        <button class="btn btn-primary" id="confirmAge">Sim, tenho 18+</button>
+        <button class="btn btn-ghost" id="leaveSite">Sair</button>
+      </div>
+      <small>Produtos com nicotina podem causar dependência. Uso não recomendado a não fumadores.</small>
+    </div>
+  </div>
+
+  <div class="page-glow page-glow-one"></div>
+  <div class="page-glow page-glow-two"></div>
+
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Ir para o início">
+      <img src="assets/logo-estrela.jpg" alt="Estrela Vape Shop logo" />
+      <div>
+        <strong>Estrela Vape Shop</strong>
+        <span>Viseu · Matosinhos</span>
+      </div>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="main-nav" id="mainNav" aria-label="Menu principal">
+      <a href="#produtos">Produtos</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#horario">Horário</a>
+      <a href="#contacto">Contacto</a>
+      <a class="nav-cta" href="tel:+351925462237">Ligar</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" aria-labelledby="heroTitle">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <span class="pill"><span class="live-dot"></span><span id="miniStatus">A verificar horário...</span></span>
+        <h1 id="heroTitle">Vape, CBD & Shisha com atendimento de loja especializada.</h1>
+        <p>Estrela Vape Shop reúne kits, pods, líquidos, aromas e acessórios selecionados para maiores de 18 anos em Viseu e Matosinhos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://www.instagram.com/estrelavapeshop/" target="_blank" rel="noopener">Ver Instagram</a>
+          <a class="btn btn-secondary" href="https://wa.me/351925462237" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="hero-meta" aria-label="Informações rápidas">
+          <span>🔞 Apenas 18+</span>
+          <span>💨 Vape</span>
+          <span>🍁 CBD</span>
+          <span>💨 Shisha</span>
+        </div>
+      </div>
+
+      <aside class="hero-card reveal" aria-label="Destaque da loja">
+        <img src="assets/fachada-estrela-vape.webp" alt="Fachada da Estrela Vape Shop" />
+        <div class="floating-badge">
+          <strong>Viseu</strong>
+          <span>Loja física</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section intro-strip reveal" aria-label="Resumo da loja">
+      <div class="strip-item">
+        <strong>E-Cigarette Store</strong>
+        <span>VAPE💨 CBD🍁 SHISHA💨</span>
+      </div>
+      <div class="strip-item">
+        <strong>Localizações</strong>
+        <span>Viseu | Matosinhos</span>
+      </div>
+      <div class="strip-item">
+        <strong>Atendimento</strong>
+        <span>Confirma stock e recomendações em loja</span>
+      </div>
+    </section>
+
+    <section class="section products" id="produtos" aria-labelledby="productsTitle">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Produtos</span>
+        <h2 id="productsTitle">Separado por categoria, simples de navegar.</h2>
+        <p>Uma montra visual para apresentar a loja sem deixar o site pesado ou confuso.</p>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card reveal">
+          <div class="icon-bubble">💨</div>
+          <h3>Máquinas & Kits</h3>
+          <p>Pods, kits, mods e dispositivos de marcas como Voopoo, Vaporesso e Uwell.</p>
+          <a href="#galeria" data-filter-link="maquinas">Ver máquinas</a>
+        </article>
+        <article class="product-card reveal">
+          <div class="icon-bubble">🧪</div>
+          <h3>Líquidos & Aromas</h3>
+          <p>Seleção visual de líquidos, aromas e sabores em destaque na loja.</p>
+          <a href="#galeria" data-filter-link="liquidos">Ver líquidos</a>
+        </article>
+        <article class="product-card reveal">
+          <div class="icon-bubble">🍁</div>
+          <h3>CBD & Shisha</h3>
+          <p>Produtos e acessórios para adultos, com orientação no atendimento presencial.</p>
+          <a href="#contacto">Falar com a loja</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section showcase reveal" aria-label="Destaque interior da loja">
+      <div class="showcase-image">
+        <img src="assets/interior-loja-wide.webp" alt="Interior da Estrela Vape Shop com vitrines e produtos" />
+      </div>
+      <div class="showcase-copy">
+        <span class="eyebrow">Ambiente da loja</span>
+        <h2>Visual limpo, vitrines organizadas e várias marcas disponíveis.</h2>
+        <p>O site foi pensado para transmitir confiança: imagens grandes, navegação curta, horários claros e contactos sempre à mão.</p>
+        <div class="brand-cloud">
+          <span>Vaporesso</span><span>Voopoo</span><span>Uwell</span><span>Dr. Frost</span><span>OhF!</span><span>Mistiq</span><span>Vintage</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="galeria" aria-labelledby="galleryTitle">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Galeria</span>
+        <h2 id="galleryTitle">Máquinas, líquidos, interior e fachada.</h2>
+        <p>Usa os filtros para separar rapidamente cada tipo de fotografia.</p>
+      </div>
+
+      <div class="filter-bar reveal" role="tablist" aria-label="Filtrar galeria">
+        <button class="filter active" data-filter="all" type="button">Tudo</button>
+        <button class="filter" data-filter="maquinas" type="button">Máquinas</button>
+        <button class="filter" data-filter="liquidos" type="button">Líquidos</button>
+        <button class="filter" data-filter="loja" type="button">Loja</button>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="gallery-card reveal" data-category="maquinas"><img src="assets/kit-voopoo-doric-rosa.webp" alt="Kit Voopoo Doric em destaque" loading="lazy"><figcaption>Voopoo Doric</figcaption></figure>
+        <figure class="gallery-card reveal tall" data-category="maquinas"><img src="assets/kit-voopoo-vinci-spark.webp" alt="Kit Voopoo Vinci Spark" loading="lazy"><figcaption>Voopoo Vinci Spark</figcaption></figure>
+        <figure class="gallery-card reveal tall" data-category="maquinas"><img src="assets/kit-vaporesso-gen-max.webp" alt="Kit Vaporesso Gen Max" loading="lazy"><figcaption>Vaporesso Gen Max</figcaption></figure>
+        <figure class="gallery-card reveal tall" data-category="maquinas"><img src="assets/pod-vaporesso-armour-g.webp" alt="Pod Vaporesso Armour G" loading="lazy"><figcaption>Vaporesso Armour G</figcaption></figure>
+        <figure class="gallery-card reveal" data-category="maquinas"><img src="assets/kit-vaporesso-gtx-one-pro.webp" alt="Kit Vaporesso GTX One Pro" loading="lazy"><figcaption>GTX One Pro</figcaption></figure>
+        <figure class="gallery-card reveal tall" data-category="maquinas"><img src="assets/pod-uwell-caliburn.webp" alt="Uwell Caliburn" loading="lazy"><figcaption>Uwell Caliburn</figcaption></figure>
+        <figure class="gallery-card reveal" data-category="maquinas"><img src="assets/pod-voopoo-argus-klyc.webp" alt="Voopoo Argus Klyc" loading="lazy"><figcaption>Voopoo Argus Klyc</figcaption></figure>
+
+        <figure class="gallery-card reveal wide" data-category="liquidos"><img src="assets/liquidos-mistiq.webp" alt="Linha de líquidos Mistiq Juice" loading="lazy"><figcaption>Mistiq Juice</figcaption></figure>
+        <figure class="gallery-card reveal wide" data-category="liquidos"><img src="assets/liquidos-blackout-vintage.webp" alt="Líquidos Blackout e Vintage" loading="lazy"><figcaption>Blackout & Vintage</figcaption></figure>
+        <figure class="gallery-card reveal wide" data-category="liquidos"><img src="assets/aromas-dr-frost.webp" alt="Aromas Dr Frost" loading="lazy"><figcaption>Dr. Frost</figcaption></figure>
+        <figure class="gallery-card reveal wide" data-category="liquidos"><img src="assets/aromas-ohf.webp" alt="Linha OhF! líquidos e aromas" loading="lazy"><figcaption>OhF!</figcaption></figure>
+
+        <figure class="gallery-card reveal wide" data-category="loja"><img src="assets/interior-loja-compacto.webp" alt="Vista interior da loja" loading="lazy"><figcaption>Interior</figcaption></figure>
+        <figure class="gallery-card reveal tall" data-category="loja"><img src="assets/fachada-estrela-vape.webp" alt="Fachada da loja Estrela Vape Shop" loading="lazy"><figcaption>Fachada</figcaption></figure>
+        <figure class="gallery-card reveal wide" data-category="loja"><img src="assets/interior-loja-wide.webp" alt="Interior amplo da loja com vitrines" loading="lazy"><figcaption>Vitrines</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section hours-section" id="horario" aria-labelledby="hoursTitle">
+      <div class="hours-card reveal">
+        <div class="status-panel">
+          <span class="eyebrow">Horário de funcionamento</span>
+          <h2 id="hoursTitle">Agora a loja está <span id="openState">a verificar...</span></h2>
+          <p id="openDetail">A calcular com base no horário de Portugal Continental.</p>
+          <div class="status-clock" id="statusClock">--:--</div>
+        </div>
+
+        <div class="table-wrap">
+          <table class="hours-table">
+            <thead>
+              <tr><th>Dia</th><th>Horário</th><th>Estado</th></tr>
+            </thead>
+            <tbody>
+              <tr data-day-row="weekday"><td>Segunda a Sexta</td><td>12:30 às 20:00</td><td><span class="table-status">Normal</span></td></tr>
+              <tr data-day-row="sat"><td>Sábado</td><td>14:00 às 19:00</td><td><span class="table-status">Normal</span></td></tr>
+              <tr data-day-row="sun"><td>Domingo</td><td>Fechado</td><td><span class="table-status closed">Encerrado</span></td></tr>
+              <tr data-day-row="holiday"><td>Feriados</td><td>Fechado</td><td><span class="table-status closed">Encerrado</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contacto" aria-labelledby="contactTitle">
+      <div class="section-heading reveal">
+        <span class="eyebrow">Contacto</span>
+        <h2 id="contactTitle">Fala com a Estrela Vape Shop.</h2>
+        <p>Confirma disponibilidade, localizações e qualquer dúvida diretamente com a loja.</p>
+      </div>
+
+      <div class="contact-grid">
+        <a class="contact-card reveal" href="tel:+351925462237">
+          <span>Telefone</span>
+          <strong>+351 925 462 237</strong>
+        </a>
+        <a class="contact-card reveal" href="mailto:estrelavapeshop@gmail.com">
+          <span>Email</span>
+          <strong>estrelavapeshop@gmail.com</strong>
+        </a>
+        <a class="contact-card reveal" href="https://www.instagram.com/estrelavapeshop/" target="_blank" rel="noopener">
+          <span>Instagram</span>
+          <strong>@estrelavapeshop</strong>
+        </a>
+        <a class="contact-card reveal" href="https://www.facebook.com/EstrelavapeshopViseu/?locale=pt_BR" target="_blank" rel="noopener">
+          <span>Facebook</span>
+          <strong>Estrela Vape Shop Viseu</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <img src="assets/logo-estrela.jpg" alt="Estrela Vape Shop" />
+      <p>Estrela Vape Shop · Viseu | Matosinhos</p>
+    </div>
+    <p class="legal">🔞 Conteúdo apenas para maiores de 18 anos. Produtos com nicotina podem causar forte dependência. Este website é informativo e não substitui o aconselhamento presencial na loja.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
